@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<html>
+	
+	<head>
+<script>
+
+function quadrado(){
+	
+	var input = parseFloat (document.Quad.queryField.value());
+	document.Quad.outText.value = input;
+	
+}
+
+</script>
+</head>
+
+<body>
+  <div>
+	<form name = "Quad" >
+		<h2>Digite o tamanho do lado de um quadrado: </h2>
+		<input type = "text" name = "queryField" maxlength = "512" />
+		<input type = "text" name = "outText" maxlength = "512" />
+		<input name =" buttonclass" type = "button" value = "ir!" onclick = "quadrado()"/>
+		
+		<h3>Test</h3>
+	</form>
+  </div>
+  
+  </body>
+{% endblock %}
+
+<!--<script type = "text/javascript">
+		function Redirect() {
+			window.location = "localhost:5000" + document.getElementById('queryField').value;
+		}
+		
+</script> -->
+</html>
+
